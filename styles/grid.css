@@ -10,7 +10,7 @@ body {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     gap: 16px;   
-    
+    margin-top: 76px;
 }
 .card-image{
     width: 100%;

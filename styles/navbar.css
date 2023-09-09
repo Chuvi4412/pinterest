@@ -8,57 +8,62 @@ body {
 }
 #navbar-pinterest{
     display: flex;
+    padding: 4px 16px 16px 16px;
+    height: 56px;
+    align-items: center;
+    position:fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: white;
+    width: calc(100% - 32px)
+}
+
+.explor-button, .start-button{
+    background-color:white;
+    color: black;
+    font-size: 16px;
+    border-radius: 24px;
+    padding: 16px 10px;
+    width: fit-content;
+    border: 0;
+    outline: none;
+    font-family: "Noto Sans";
+    font-weight: 600;
+    text-decoration: none;
 }
 .start-button{
     background-color: black;
     color: white;
-    font-size: 16px;
-    border-radius: 24px;
     padding: 16px 22px;
-    width: fit-content;
-    border: 0;
-    outline: none;
-    min-width: 60px;
-    min-height: 48px;
-    margin-top: 16px;
-    margin-right: 16px;
-    font-family: "Noto Sans";
-    font-weight: 600;
+
+
 }
-.explor-button{
-    background-color:white;
-    color: black;
-    font-size: 16px;
-    border-radius: 24px;
-    padding: 16px 22px;
-    width: fit-content;
-    border: 0;
-    outline: none;
-    min-width: 60px;
-    min-height: 48px;
-    margin-top: 16px;
-    margin-right: 16px;
-    font-family: "Noto Sans";
-    font-weight: 600;
+
+
+.first-section, .second-section, .third-section{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 16px;
 }
-.creat-button{
-    background-color:white;
-    color: black;
-    font-size: 16px;
+.second-section{
+    flex: 1 1 auto;
+}
+.second-section div{
+    display: flex;
+    background-color: #e9e9e9;
+    padding: 0px 4px 0px 16px;
     border-radius: 24px;
-    padding: 16px 22px;
-    width: fit-content;
-    border: 0;
-    outline: none;
-    min-width: 60px;
-    min-height: 48px;
-    margin-top: 16px;
+    height: 48px;
+    margin-left: 16px;
     margin-right: 16px;
-    font-family: "Noto Sans";
-    font-weight: 600;
+    width: 100%;
+}
+.second-section div img{
+    width: 16px;
 }
 .finder{
-    background-color: grey;
     border: none;
     color: #333;
     font-family: Noto Sans; 
@@ -70,7 +75,18 @@ body {
     width: 100%;
     line-height: normal;
     border-radius: 50px;
+    background-color: transparent;
+    margin-left: 8px;
 }
-.notifications-icon{
-    position: absolute;
+#profile-img{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
 }
+#profile-img img{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+
+
